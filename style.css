@@ -42,7 +42,8 @@ body{
 h2.title-text{
     font-size: 40px;
     font-weight:900;
-    padding-right: 126px;
+    width: fit-content;
+    /* padding-right: 126px; */
     padding-top: 4px;
 
 }
@@ -93,19 +94,22 @@ iframe.hide{
    
 }
 
-.col .car-hei{
+.card-body .bold-title{
 
-    height: 100px;
+    font-weight: 400;
+}
+.card-body .card-title{
 
+    font-weight: 400;
 }
 .car-hei h5{
     
     font-weight: 200;
-    padding: 20px;
+ 
 
     
 }
-.col .car-he{
+/* .col .car-he{
 
     height: 100px;
 
@@ -115,7 +119,7 @@ iframe.hide{
     font-weight: 200;
 
 
-}
+} */
 #image2:hover{
 
     cursor: pointer;
@@ -368,7 +372,7 @@ iframe.hide{
     border-left: 3px solid #00d2b5;
     border-top:3px solid #00d2b5 ;
     border-top-left-radius: 15px;
-    padding: 0px 40px;
+    padding: 0px 32px;
     margin: -2.1px;
     width: fit-content;
     position: relative;
@@ -399,9 +403,11 @@ iframe.hide{
     position: relative;
     /* text-align: center; */
     width: 90%;
-    padding: 0 40px;
+    padding: 20px 20px;
     padding-bottom: 20px;
     margin-left: 10%;
+    text-align: right;
+
 
 }
 .road4::after{
@@ -427,7 +433,7 @@ iframe.hide{
     border-top-left-radius: 15px; 
     border-bottom-left-radius: 15px;  
     width: 90%;
-    padding: 20px 40px; 
+    padding: 20px 20px; 
     position: relative;
     margin-top: -2.1px;
     margin-right: 10%;
@@ -454,12 +460,13 @@ iframe.hide{
     border-right: 3px solid #00d2b5;
     border-top:3px solid #00d2b5 ;
     border-top-right-radius: 15px;
-    padding: 0px 40px;
+    padding: 20px 20px;
     margin: -2.1px;
     width: 90%;
     position: relative;
     padding-top: 10px;
     margin-left: 10%;
+    text-align: right;
 
 
 
@@ -483,6 +490,23 @@ iframe.hide{
 /* 3 process to join sps ends*/
 
 
+
+#buttonScrollUp{
+    position: fixed;
+    right: 40px;
+    bottom: 20px;
+    height: 60px;
+    border-radius: 8px;
+    background-color: #00d2b5;
+    border: none;
+    z-index: 5;
+}
+
+#buttonScrollUp:hover{
+
+    background-color: #17a2b8;
+    transition: background-color 0.5s ease-in ;
+}
 
 
 

@@ -10,6 +10,10 @@ function openVideo(image,video){
 
 
 }
+
+
+
+
 // function openVideo2(){
 //     document.getElementById("image1").style.display="none"
 //     var video2=document.getElementById("vide1")
