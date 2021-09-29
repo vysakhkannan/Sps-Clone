@@ -24,10 +24,10 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <button id="buttonScrollUp">
-<span class="material-icons">
-expand_less
-</span>
+  <button id="buttonScrollUp" style="display: none;">
+    <span class="material-icons">
+      expand_less
+    </span>
   </button>
     <!-- main body starting -->
 
@@ -531,9 +531,24 @@ expand_less
 
     <script>
       const scrollToTop=document.querySelector("#buttonScrollUp")
-scrollToTop.addEventListener("click", function() {
+            window.addEventListener("scroll", (e)=>{
+              const scrollmeasure=this.scrollY
+              
+              if(scrollmeasure>25){
 
-    window.scrollTo({
+                console.log(scrollmeasure)
+                scrollToTop.style.display="block";
+
+              }else{
+
+                scrollToTop.style.display="none";
+
+
+              }
+      })
+
+      scrollToTop.addEventListener("click", function() {
+        window.scrollTo({
         top:0,
         left:0,
         behavior:"smooth"
